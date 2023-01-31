@@ -10,6 +10,13 @@ body{
     border-top: none;
     border-left: none;
 }
+.hover-show{
+    opacity: 0;
+    transition: .3s;
+}
+.hover-show:hover{
+    opacity: 1;
+}
 @media screen and (min-width:769px){
     .seporated_2 > div:nth-child(3n) {
         border-right: none;

@@ -9,9 +9,9 @@ buttonsNext.forEach(element => element.addEventListener('click', scrollNext, fal
 function scrollPrev(e){
     let sliderId = this.dataset.bsTarget;
     let slider = document.querySelector(sliderId);
-    slider.scroll({
+    slider.scrollBy({
         top: 0, 
-        left: -1000, 
+        left: -(window.innerWidth - 60), 
         behavior: 'smooth'
     });
 }
@@ -19,9 +19,9 @@ function scrollPrev(e){
 function scrollNext(e){
     let sliderId = this.dataset.bsTarget;
     let slider = document.querySelector(sliderId);
-    slider.scroll({
+    slider.scrollBy({
         top: 0, 
-        left: 1000, 
+        left: window.innerWidth - 60, 
         behavior: 'smooth'
     });
 }
